@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opening the Garmin Connect IQ Store…</title>
+<meta name="robots" content="noindex, nofollow">
+<!-- Fallback for visitors without JavaScript. -->
+<meta http-equiv="refresh" content="2; url=https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8">
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; background: #111; color: #eee; display: grid; place-items: center; min-height: 100vh; margin: 0; text-align: center; }
+  a { color: #f07a2a; }
+</style>
+</head>
+<body>
+<!--
+  Store click tracker. Every "Get it on Garmin" button links here, so each
+  visit to this page in Cloudflare Web Analytics is one store click.
+  To change where the button goes, edit STORE_URL below and the two other
+  copies of the URL on this page (meta refresh and the fallback link).
+-->
+<p>Opening the Garmin Connect IQ Store…<br>
+<a id="fallback" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8">Tap here if nothing happens</a></p>
+
+<script>
+  var STORE_URL = "https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8";
+  var gone = false;
+  function go() {
+    if (gone) return;
+    gone = true;
+    window.location.replace(STORE_URL);
+  }
+  // Give the analytics beacon a moment to record the visit, then leave.
+  // Never wait more than 1.2 seconds, even if the beacon is blocked.
+  setTimeout(go, 1200);
+  var s = document.createElement("script");
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", '{"token": "REPLACE_WITH_CLOUDFLARE_TOKEN"}');
+  s.onload = function () { setTimeout(go, 300); };
+  s.onerror = go;
+  document.body.appendChild(s);
+</script>
+</body>
+</html>
