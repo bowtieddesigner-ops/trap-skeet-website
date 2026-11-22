@@ -135,8 +135,8 @@
 </head>
 <body>
 
-<!-- Set the Garmin store URL once here; every "Get it" button uses it. -->
-<script>window.GARMIN_STORE_URL = "https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8";</script>
+<!-- Every "Get it" button links to /go/garmin/, a redirect page that counts
+     the click in Cloudflare Web Analytics. The store URL lives in go/garmin/index.html. -->
 
 <header class="nav">
   <div class="wrap nav-inner">
@@ -149,7 +149,7 @@
       <a href="#games">Games</a>
       <a href="#platforms">Watches</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-sm store-link" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8" target="_blank" rel="noopener">Get it on Garmin</a>
+      <a class="btn btn-sm store-link" href="/go/garmin/" target="_blank" rel="noopener">Get it on Garmin</a>
     </nav>
   </div>
 </header>
@@ -164,7 +164,7 @@
       <h1>Trap and Skeet</h1>
       <p class="lede">The clay shooting scoring app for Garmin watches. Score every target from your wrist. Leave the clipboard and the phone in the truck.</p>
       <div class="cta-row">
-        <a class="btn store-link" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8" target="_blank" rel="noopener">Get it on Garmin Connect IQ</a>
+        <a class="btn store-link" href="/go/garmin/" target="_blank" rel="noopener">Get it on Garmin Connect IQ</a>
         <a class="btn btn-ghost" href="#platforms">Apple Watch &amp; Wear OS soon</a>
       </div>
       <ul class="pills">
@@ -287,7 +287,7 @@
         <span class="badge badge-live">Available now</span>
         <h3>Garmin</h3>
         <p>Fenix, Epix, Forerunner, Venu, Instinct, MARQ and more. 76 watches supported through Connect IQ.</p>
-        <a class="btn store-link" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8" target="_blank" rel="noopener">Get it on Connect IQ</a>
+        <a class="btn store-link" href="/go/garmin/" target="_blank" rel="noopener">Get it on Connect IQ</a>
       </article>
       <article class="platform">
         <span class="badge">Coming soon</span>
@@ -350,7 +350,7 @@
   <div class="wrap cta-inner">
     <h2>Know your game.</h2>
     <p>Install Trap and Skeet from the Garmin Connect IQ Store and score your next round on your watch.</p>
-    <a class="btn store-link" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8" target="_blank" rel="noopener">Get it on Garmin Connect IQ</a>
+    <a class="btn store-link" href="/go/garmin/" target="_blank" rel="noopener">Get it on Garmin Connect IQ</a>
   </div>
 </section>
 
@@ -365,13 +365,8 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-  if (window.GARMIN_STORE_URL && window.GARMIN_STORE_URL !== "#get") {
-    document.querySelectorAll(".store-link").forEach(function (a) {
-      a.href = window.GARMIN_STORE_URL;
-      a.target = "_blank";
-      a.rel = "noopener";
-    });
-  }
 </script>
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "99f449dfdc9942678e65e44a4acafd88"}'></script>
 </body>
 </html>
