@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trap and Skeet Scoring App for Garmin Watches</title>
-<meta name="description" content="Trap and Skeet is a clay shooting scoring app for 76 Garmin watches. Score trap singles, doubles, handicap, Olympic trap and skeet with one button press, then see a field-map shot chart. Apple Watch and Wear OS coming soon.">
+<meta name="description" content="Trap and Skeet is a clay shooting scoring app for 76 Garmin watches. Score trap singles, doubles, handicap, Olympic trap and skeet with one button press, then track your game over time with weather, heart rate and lifetime stats. Apple Watch and Wear OS coming soon.">
 <link rel="canonical" href="https://trapandskeet.app/">
 <meta name="robots" content="index, follow">
 <meta property="og:site_name" content="Trap and Skeet">
 <meta property="og:title" content="Trap and Skeet Scoring App for Garmin Watches">
-<meta property="og:description" content="Score trap and skeet from your wrist. Field-map shot charts, hit/miss glow, personal bests and lifetime stats on 76 Garmin watches.">
+<meta property="og:description" content="Score trap and skeet from your wrist. Track your game over time with weather, heart rate, GPS sites, field-map shot charts and lifetime stats on 76 Garmin watches.">
 <meta property="og:image" content="https://trapandskeet.app/img/hero.jpg">
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="720">
@@ -43,17 +43,20 @@
    "https://trapandskeet.app/img/34-history-skeet-field-map.png",
    "https://trapandskeet.app/img/13-hit-glow.png"
   ],
-  "description": "Clay shooting scoring app for 76 Garmin watches. Score trap singles, trap doubles, handicap, Olympic trap and skeet from your wrist, with field-map shot charts, hit/miss glow, undo and resume, personal best alerts, lifetime stats and Garmin Connect laps per station.",
+  "description": "Clay shooting scoring app for 76 Garmin watches. Score trap singles, trap doubles, handicap, Olympic trap and skeet from your wrist, and track your game over time: weather, wind, heart rate and GPS location saved with every round, field-map shot charts, lifetime stats, personal best alerts and Garmin Connect laps per station.",
   "featureList": [
+   "Performance tracking over time",
    "Field-map shot charts",
-   "Trap doubles, all 50 targets",
+   "Score with a button or tap, without looking at the watch",
+   "Shooting sites saved by GPS",
+   "Live wind and weather",
+   "Heart rate per round",
    "Undo and resume",
    "Station dots",
    "Hit and miss glow",
    "Personal best alerts",
    "Garmin Connect laps per station",
-   "Lifetime stats with a last-10 rounds chart",
-   "Wind arrow",
+   "Lifetime stats: best starting station, worst stations, longest streak and a last-10 rounds chart",
    "76 supported Garmin watches"
   ]
  },
@@ -225,20 +228,32 @@
     </div>
 
     <div class="grid">
-      <article class="card">
-        <div class="icon" aria-hidden="true">↶</div>
-        <h3>Undo and resume</h3>
-        <p>Fat-fingered a score? Undo it. Got called away mid-round? Pick up right where you left off.</p>
+      <article class="card lead">
+        <div class="icon" aria-hidden="true">↗</div>
+        <h3>Track your game over time</h3>
+        <p>Every round saves your score, heart rate, weather and location, so you can find the patterns behind your scores. Do you shoot better when it's warm, cold or windy? Is your heart rate running high on the line? Lifetime stats show your best starting station, your worst stations and your longest streak.</p>
+        <ul class="chips">
+          <li>Weather per round</li>
+          <li>Heart rate per round</li>
+          <li>Best starting station</li>
+          <li>Worst stations</li>
+          <li>Longest streak</li>
+        </ul>
       </article>
       <article class="card">
-        <div class="icon" aria-hidden="true">◎</div>
-        <h3>Doubles, all 50 targets</h3>
-        <p>Full trap doubles support, scoring both birds of every pair across all 50 targets.</p>
+        <div class="icon" aria-hidden="true">✓</div>
+        <h3>No-look scoring</h3>
+        <p>Press a button or tap the screen after each shot. One buzz for a hit, two for a miss, so your eyes stay on the field.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">⌖</div>
+        <h3>GPS site history</h3>
+        <p>Each round records where you shot, so your history shows every range and club you've shot at.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true">⤳</div>
-        <h3>Wind arrow</h3>
-        <p>Live wind speed and direction while you shoot, saved with each round alongside the weather.</p>
+        <h3>Live wind &amp; weather</h3>
+        <p>Wind speed, gusts and direction on screen while you shoot. Temperature and conditions save with every round.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true">♥</div>
@@ -333,9 +348,13 @@
 
 <section id="get" class="section cta">
   <div class="wrap cta-inner">
-    <h2>Shoot more. Write less.</h2>
+    <h2>Know your game.</h2>
     <p>Install Trap and Skeet from the Garmin Connect IQ Store and score your next round on your watch.</p>
-    XX
+    <a class="btn store-link" href="https://apps.garmin.com/apps/09eac0f7-5b67-4c0e-ba4a-b6a7c40890d8" target="_blank" rel="noopener">Get it on Garmin Connect IQ</a>
+  </div>
+</section>
+
+</main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
